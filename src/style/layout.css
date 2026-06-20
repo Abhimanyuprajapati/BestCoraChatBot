@@ -1,0 +1,52 @@
+.containerLayout {
+  margin-left: 50px;
+  width: calc(100vw - 50px);
+  height: calc(100vh - 50px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #dfecf5;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sidebarContainer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100% - 50px);
+  width: 250px;
+  position: absolute;
+  transition: width 0.3s ease;
+}
+
+.toolbar {
+  width: max-content;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  z-index: 1;
+  height: 40px;
+}
+
+.toggleBtn {
+  outline: none !important;
+  border: unset !important;
+  box-shadow: none !important;
+
+  &:focus,
+  &:active,
+  &:hover {
+    box-shadow: none !important;
+    outline: none !important;
+    border: unset !important;
+  }
+}
+
+.sidebarContainer.collapsed {
+  width: 50px; 
+}
+
+.containerLayout {
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}

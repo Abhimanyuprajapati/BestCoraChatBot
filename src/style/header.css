@@ -1,0 +1,112 @@
+.appBar {
+  padding: 0 0.5rem;
+  position: sticky;
+  z-index: 100;
+  gap: 0;
+  background-size: cover;
+  background: linear-gradient(90deg, #005db4 31.96%, #53ddf6 100.75%);
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.logobox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lab_logo {
+  color: #FAF9F8;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.logoutbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chatbotToggleBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #4299e0 20%, #ca42e0 48%, #ff5f46 80%);
+  cursor: pointer;
+}
+
+.chatbotToggleBtn:hover {
+  background: linear-gradient(135deg, #4299e0 20%, #ca42e0 48%, #ff5f46 80%);
+}
+
+.chatbotToggleImage {
+  width: 100%;
+  height: auto;
+  padding: 0.1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logoutImage {
+  height: auto;
+  cursor: pointer;
+  display: block;
+}
+
+.logoutBtn {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  background: transparent;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 600;
+}
+
+.logoutBtn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+}
+
+/* USER + LOGOUT ALIGNMENT */
+.logobox>div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+/* REMOVE BROKEN NESTED CSS */
+@media screen and (max-width: 992px) {
+  .appBar {
+    flex-wrap: nowrap;
+  }
+
+  .logobox {
+    overflow: hidden;
+  }
+
+  .lab_logo {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logobox {
+    gap: 10px;
+  }
+}

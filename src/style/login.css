@@ -1,0 +1,48 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background: linear-gradient(254deg, rgba(215, 235, 255, 0.75) 5.47%, rgba(179, 241, 255, 0.75) 99.22%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardlogin {
+  background: #ffffff;
+  padding: 30px 40px;
+  width: 350px;
+  border-radius: 6px;
+  box-shadow: 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.10), 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.13);
+  text-align: center;
+}
+
+.title {
+  color: #0078D4;
+  margin-bottom: 12px;
+}
+
+.login-copy {
+  color: #4a4a4a;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 18px 0;
+}
+
+.btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: #0078D4;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background: #006cbe;
+}

@@ -1,0 +1,13 @@
+
+.ontology-node-key{
+    font-size: 14px;
+}
+
+/* .react-flow__minimap svg {
+    display: none;
+} */
+
+
+.table-wrap{
+    height: -webkit-fill-available !important; 
+}
